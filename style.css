@@ -92,6 +92,9 @@ form .row select{
     color: #000;
 }
 
+select::-webkit-scrollbar{
+  width: 0px;
+}
 
 .logo {
   height: 6em;
@@ -118,17 +121,17 @@ button {
   font-family: inherit;
   background-color: #1a73e8;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: transform 0.3s ease;
 }
 
 button:hover {
   color: #000;
 }
 
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+button:active{
+  transform: scale(0.97);
 }
+
 
 @media (prefers-color-scheme: light) {
   :root {
